@@ -2,5 +2,37 @@
 // @import 'normalize-css/normalize';
 
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+
+$c-grey: #464646;
+$c-lightgrey: #c8c8c6;
+$c-purple: #874fd6;
+$c-white: #f0f0f0;
+
 @import 'font-awesome';
 @import 'box-sizing';
+@import 'sidebar';
+@import 'main';
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0 auto;
+  font-family: sans-serif;
+
+}
+
+.wrapper {
+  display: flex;
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
