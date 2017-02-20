@@ -1,8 +1,9 @@
-
 .sidebar {
   width: 25%;
+  min-height: 100%;
   padding: 1rem;
   background-color: $c-lightgrey;
+  overflow: auto;
 
   h2 {
     margin-top: 2rem;
@@ -33,5 +34,10 @@
     padding: 0.5rem;
     background-color: $c-purple;
     color: $c-white;
+
+    &:hover {
+      background-color: $c-lightpurple;
+    }
+
   }
 }

@@ -13,12 +13,40 @@ main {
 
     li {
       margin-right: 1rem;
+      margin-bottom: 0;
+
+      &:hover {
+        border-bottom: 0.05rem solid $c-grey;
+
+      }
     }
   }
 
-  .grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__item {
+    flex-basis: calc(100% / 5 - 2rem);
+    margin: 1rem;
   }
+}
+
+.game-item__pic {
+  width: 100%;
+}
+.game-item__name {
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.game-item__popularity {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  color: $c-lightgrey;
+  font-size: 0.9rem;
 }

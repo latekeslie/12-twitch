@@ -6,6 +6,7 @@
 $c-grey: #464646;
 $c-lightgrey: #c8c8c6;
 $c-purple: #874fd6;
+$c-lightpurple: #c1a7d1;
 $c-white: #f0f0f0;
 
 @import 'font-awesome';
@@ -26,7 +27,12 @@ body {
 
 .wrapper {
   display: flex;
-  height: 100%;
+  height: 100vh;
+
+  main {
+    flex-grow: 1;
+    overflow: scroll;
+  }
 }
 
 ul {
